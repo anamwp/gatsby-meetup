@@ -1,21 +1,78 @@
-import React from "react"
-import { Link } from "gatsby"
+import React, {Component} from "react"
+import {  graphql } from "gatsby"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
+// import Image from "../components/image"
 import SEO from "../components/seo"
+// import Hero from '../components/Hero'
+import Location from '../components/Location'
+import Schedule from '../components/Schedule'
+import Speakers from '../components/Speakers'
+import Partners from '../components/Partners'
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
-  </Layout>
-)
+class IndexPage extends Component {
+  render(){
+    const data = this.props.data;
+    return(
+      <Layout>
+        <SEO title="Gatsby Meetup #01, Bangladesh" />
+        {/* <Hero/> */}
+        <Speakers data={data.allStrapiSpeakers}/>
+        <Schedule/>
+        <Location/>
+        <Partners data={data.allStrapiPartners}/>
+      </Layout>
+    )
+  }
+  
+}
 
 export default IndexPage
+
+export const query = graphql`
+  query MyQuery {
+    allStrapiSpeakers{
+      edges {
+        node {
+          id
+          Name
+          Designation
+          topic_of_talk
+          speaker_image {
+            childImageSharp {
+              # fluid(maxWidth:300) {
+              #   ...GatsbyImageSharpFluid
+              # }
+              fixed(width:200){
+                ...GatsbyImageSharpFixed
+              }
+            }
+          }
+          meetup {
+            name
+            id
+          }
+        }
+      }
+    }
+    allStrapiPartners {
+      edges {
+        node {
+          name
+          url
+          meetups {
+            name
+          }
+          image {
+            childImageSharp {
+              fixed(width:200){
+                ...GatsbyImageSharpFixed
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
+`

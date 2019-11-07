@@ -37,11 +37,19 @@ export default class Index extends Component {
                     </p>
                     <p>
                         <code>5.20 PM</code>
-                        <span>Questions, Answer & Case Study</span>
+                        <span>Break & Prayer Time</span>
                     </p>
                     <p>
                         <code>5.40 PM</code>
-                        <span>Networking & Closing</span>
+                        <span>Migrating from Rest to GraphQL</span>
+                    </p>
+                    <p>
+                        <code>6.00 PM</code>
+                        <span>Present and Future of Gatsby</span>
+                    </p>
+                    <p>
+                        <code>6.20 PM</code>
+                        <span>Questions, Answer & Case Study</span>
                     </p>
 
 

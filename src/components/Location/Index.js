@@ -1,7 +1,7 @@
-import React, { Component } from 'react'
+import React, { Component } from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import {LocationWrapper} from './Style'
-import Img from 'gatsby-image';
+import {LocationWrapper} from "./Style"
+import Img from "gatsby-image";
 
 export const MapImage = () => {
     const data = useStaticQuery(graphql`

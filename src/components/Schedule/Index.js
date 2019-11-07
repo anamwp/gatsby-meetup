@@ -1,5 +1,5 @@
-import React, { Component } from 'react'
-import {ScheduleWrapper} from './Style'
+import React, { Component } from "react"
+import {ScheduleWrapper} from "./Style"
 
 export default class Index extends Component {
     render() {

@@ -1,6 +1,6 @@
-import React, { Component } from 'react'
-import {SpeakerWrapper} from './Style'
-import Img from 'gatsby-image'
+import React, { Component } from "react"
+import {SpeakerWrapper} from "./Style"
+import Img from "gatsby-image"
 
 export default class Index extends Component {
     render() {

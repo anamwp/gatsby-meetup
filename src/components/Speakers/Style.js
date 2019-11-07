@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from "styled-components"
 
 export const SpeakerWrapper = styled.div`
     padding:100px 100px;

@@ -16,7 +16,11 @@ export const SpeakerWrapper = styled.div`
         }
     }
     .single-speaker{
-        display:flex;
+        display:grid;
+        grid-template-columns:200px 1fr;
+        @media(max-width:768px) {
+            grid-template-columns:1fr;
+        }
         flex-wrap:wrap;
         margin-bottom:30px;
         align-items:center;

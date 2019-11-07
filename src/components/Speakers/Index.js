@@ -1,10 +1,11 @@
 import React, { Component } from "react"
 import {SpeakerWrapper} from "./Style"
-import Img from "gatsby-image"
+import SpeakerImage from './SpeakerImage'
 
 export default class Index extends Component {
     render() {
         const speakers = this.props.data;
+        
         return (
             <SpeakerWrapper>
                 <h2 className="section-title">Speakers</h2>
@@ -12,10 +13,7 @@ export default class Index extends Component {
                     speakers.edges.map( (speaker, index) => (
                         <div className="single-speaker" key={index}>
                             <div className="image">
-                                {
-                                speaker.node.speaker_image.childImageSharp && 
-                                <Img fixed={speaker.node.speaker_image.childImageSharp.fixed} />
-                                }
+                                <SpeakerImage data={speaker.node.speaker_image}/>
                             </div>
                             <div className="bio">
                                 <p className="name">

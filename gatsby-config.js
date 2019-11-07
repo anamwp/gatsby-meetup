@@ -43,7 +43,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
+        name: `Gatsby Meetup Bangladesh`,
         short_name: `starter`,
         start_url: `/`,
         background_color: `#663399`,

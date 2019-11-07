@@ -12,7 +12,7 @@ import {InitialTheme} from '../utils/GlobalStyle'
 
 import Header from "./Header/header"
 import "./layout.css"
-import Footer from './Footer'
+import Footer from "./Footer"
 
 
 

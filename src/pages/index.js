@@ -5,10 +5,10 @@ import Layout from "./../components/layout"
 // import Image from "../components/image"
 import SEO from "./../components/seo"
 // import Hero from '../components/Hero'
-import Location from './../components/Location'
-import Schedule from './../components/Schedule'
-import Speakers from './../components/Speakers'
-import Partners from './../components/Partners'
+import Location from "./../components/Location"
+import Schedule from "./../components/Schedule"
+import Speakers from "./../components/Speakers"
+import Partners from "./../components/Partners"
 
 class IndexPage extends Component {
   render(){

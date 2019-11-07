@@ -16,9 +16,10 @@ module.exports = {
     {
       resolve: `gatsby-source-strapi`,
       options: {
-        apiURL: process.env.DEPLOY_URL 
-          ? 'https://gatsby-meeup-bangladesh-db.herokuapp.com'
-          : 'http://localhost:1337',
+        // apiURL: process.env.DEPLOY_URL 
+        //   ? 'https://gatsby-meeup-bangladesh-db.herokuapp.com'
+        //   : 'http://localhost:1337',
+        apiURL: `https://gatsby-meeup-bangladesh-db.herokuapp.com`,
         queryLimit: 1000, // Default to 100
         contentTypes: [`speakers`, `meetups`, `partners`],
         // Possibility to login with a strapi user, when content types are not publically available (optional).

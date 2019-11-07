@@ -2,18 +2,25 @@ import styled from "styled-components"
 
 export const SpeakerWrapper = styled.div`
     padding:100px 100px;
+    @media(max-width:768px) {
+        padding:50px 15px;
+    }
     .section-title{
         font-size: ${props => props.theme.fzTitle};
         margin-bottom:50px;
         font-family: ${props => props.theme.fontFamily};
+        @media(max-width:768px) {
+            text-align:center;
+        }
     }
     .single-speaker{
         display:flex;
         flex-wrap:wrap;
         margin-bottom:30px;
         align-items:center;
+        
         .image{
-            linhe-height:0;
+            line-height:0;
             border:solid 1px #f7f7f7;
         }
         .bio{
@@ -26,6 +33,19 @@ export const SpeakerWrapper = styled.div`
             }
             p{
                 margin-bottom: 5px;
+            }
+        }
+        @media(max-width:768px) {
+            flex-flow:wrap;
+            text-align:center;
+            .image{
+                width:100%;
+                line-height:0;
+                border:none;
+            }
+            .bio{
+                margin-left:0;
+                margin-top:10px;
             }
         }
     }

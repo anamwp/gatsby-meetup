@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Gatsby Meetup #01, Bangladesh`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    description: `We are glad to announce the very first Gatsby event in Bangladesh on 9th instant. Appreciating your overwhelming interest. It's here for the first time for exchanging knowledge about Gatsby, Headless WordPress, GraphQL.`,
     author: `@theanamhossain`,
   },
   plugins: [

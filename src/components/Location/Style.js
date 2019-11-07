@@ -8,6 +8,9 @@ export const LocationWrapper = styled.div`
     }
     text-align:center;
     padding:100px 0px;
+    @media(max-width:768px) {
+        padding:50px 15px;
+    }
     .place{
         margin-top:15px;
     }

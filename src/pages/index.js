@@ -1,14 +1,14 @@
 import React, {Component} from "react"
 import {  graphql } from "gatsby"
 
-import Layout from "./../components/layout"
+import Layout from "../components/layout"
 // import Image from "../components/image"
-import SEO from "./../components/seo"
+import SEO from "../components/seo"
 // import Hero from '../components/Hero'
-import Location from "./../components/Location"
-import Schedule from "./../components/Schedule"
-import Speakers from "./../components/Speakers"
-import Partners from "./../components/Partners"
+import Location from "../components/Location/Index"
+import Schedule from "../components/Schedule/Index"
+import Speakers from "../components/Speakers/Index"
+import Partners from "../components/Partners/Index"
 
 class IndexPage extends Component {
   render(){

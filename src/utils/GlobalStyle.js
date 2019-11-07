@@ -1,5 +1,5 @@
 import {createGlobalStyle} from "styled-components"
-import * as fonts from "./../fonts"
+import * as fonts from "./../fonts/Index"
 
 
 createGlobalStyle`

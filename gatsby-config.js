@@ -14,6 +14,14 @@ module.exports = {
       },
     },
     {
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        google: {
+          families: ['Montserrat:400,700,800', 'Roboto']
+        }
+      }
+    },
+    {
       resolve: `gatsby-source-strapi`,
       options: {
         // apiURL: process.env.DEPLOY_URL 

@@ -1,6 +1,8 @@
 import styled from "styled-components"
 
 export const SpeakerWrapper = styled.div`
+    font-family: ${props => props.theme.fontFamily};
+    font-size: ${props => props.theme.fzBase};
     padding:100px 100px;
     @media(max-width:768px) {
         padding:50px 15px;
@@ -8,7 +10,7 @@ export const SpeakerWrapper = styled.div`
     .section-title{
         font-size: ${props => props.theme.fzTitle};
         margin-bottom:50px;
-        font-family: ${props => props.theme.fontFamily};
+        font-family: ${props => props.theme.titleFontFamily};
         @media(max-width:768px) {
             text-align:center;
         }
@@ -28,7 +30,7 @@ export const SpeakerWrapper = styled.div`
             flex: 2 0 0;
             .name{
                 font-weight:bold;
-                font-family: ${props => props.theme.fontFamily};
+                font-family: ${props => props.theme.titleFontFamily};
                 font-size: ${props => props.theme.fzSubtitle} ;
             }
             p{

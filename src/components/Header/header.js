@@ -24,7 +24,6 @@ const Header = ({ siteTitle }) => {
       }
     }
   `)
-  console.log();
   return(
     <>
     <HeaderWrapper

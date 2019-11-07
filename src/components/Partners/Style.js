@@ -10,6 +10,6 @@ export const PartnerWrapper = styled.div`
     .section-title{
         font-size: ${props => props.theme.fzTitle};
         margin-bottom:50px;
-        font-family: ${props => props.theme.fontFamily};
+        font-family: ${props => props.theme.titleFontFamily};
     }
 `

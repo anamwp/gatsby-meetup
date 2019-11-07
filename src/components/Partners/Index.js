@@ -5,10 +5,9 @@ import {PartnerWrapper} from './Style'
 export default class Index extends Component {
     render() {
         const partners = this.props.data.edges;
-        // console.log(partners);
         return (
             <PartnerWrapper>
-                <h2 class="section-title">Partners</h2>
+                <h2 className="section-title">Partners</h2>
                 {
                     partners.map( (partner, index) => (
                         <div key={index}>

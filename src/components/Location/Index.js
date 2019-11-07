@@ -24,10 +24,10 @@ export default class Index extends Component {
     render() {
         return (
             <LocationWrapper>
-                <h2 class="section-title">Date and Time</h2>
+                <h2 className="section-title">Date and Time</h2>
                 <p className="time">9th November, 2019 at 3.00 PM</p>
                 <MapImage/>
-                <p class="place">
+                <p className="place">
                 Level - 12, Suite - 1202, SEL HUQ SKYPARK<br/>
                 23/2 Mirpur Rd, Dhaka 1207, Bangladesh
                 </p>

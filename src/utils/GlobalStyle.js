@@ -1,21 +1,22 @@
-import {createGlobalStyle} from "styled-components"
-import * as fonts from "./../fonts/Index"
+// import {createGlobalStyle} from "styled-components"
+// import * as fonts from "./../fonts/Index"
 
 
-createGlobalStyle`
-@font-face{
-    font-family: 'Futura PT';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Futura PT'), url('${
-       fonts.FuturaPTBold
-     }') format('truetype');
-}
-`
+// createGlobalStyle`
+// @font-face{
+//     font-family: 'Futura PT';
+//     font-style: normal;
+//     font-weight: normal;
+//     src: local('Futura PT'), url('${
+//        fonts.FuturaPTBold
+//      }') format('truetype');
+// }
+// `
 
 
 export const InitialTheme = {
-    fontFamily: 'Futura PT',
+    fontFamily: 'Roboto',
+    titleFontFamily: 'Montserrat',
     background: '#fff',
     headerBg: '#fff',
     footerBg: '#fafafa',

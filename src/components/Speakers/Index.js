@@ -5,7 +5,6 @@ import Img from "gatsby-image"
 export default class Index extends Component {
     render() {
         const speakers = this.props.data;
-        console.log(speakers);
         return (
             <SpeakerWrapper>
                 <h2 className="section-title">Speakers</h2>
